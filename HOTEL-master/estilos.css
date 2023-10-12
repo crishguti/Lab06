@@ -1,0 +1,31 @@
+header {
+    background-color: #0099FF; 
+    padding: 20px;
+}
+
+body {
+    background-image: url('https://img.freepik.com/vector-gratis/fondo-geometrico-abstracto-diseno-poli_1048-8354.jpg?w=996&t=st=1697036078~exp=1697036678~hmac=396f8296140633fbfca91eaae2ef3744aa1871f2b45d278126f55e714053732e');
+    background-size: cover;
+    background-position: center center;
+}
+
+h3 {
+    color: #000000;
+    font-family: Arial, sans-serif; 
+}
+
+.card-body {
+    color: #FFFFFF; 
+    font-family: Arial, sans-serif;
+    font-size: 20px; 
+    border: 1px solid #444; 
+    background-color: #222; 
+    padding: 20p;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
