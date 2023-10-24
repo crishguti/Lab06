@@ -6,17 +6,7 @@
     $sentencia = $bd->query("select * from reservas");
     $reservas = $sentencia->fetchAll(PDO::FETCH_OBJ);
 ?>
-<!--
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sistema Administrativo</title>
-  <script src="../HOTEL-master/js/buscador.js"></script>
-</head>
-<body>-->
+
 
 <div class="container w-100 mt-4">
     <div class="row justify-content-center">
@@ -75,6 +65,8 @@
                                         <td>
                                             <a class="text-success" href="editar.php?codigo=<?php echo $dato->id; ?>"><i class="bi bi-pencil-square"></i></a>
                                             <a onclick="return confirm('¿Estás seguro de eliminar?');" class="text-danger" href="eliminar.php?codigo=<?php echo $dato->id; ?>"><i class="bi bi-trash"></i></a>
+                                            <td><a class="text-primary" href="agregarPromocion.php?codigo=<?php echo $dato->id; ?>">
+                                            <i class="bi bi-cursor"></i></a></td>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>
